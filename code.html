@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Mini Site Template</title>
+    <title>Taco Cat: A Coding Project</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,7 +22,7 @@
 <!-- ==== Nav Section === -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid"> 
-            <a class="navbar-brand" href="#"><img src="/img/katlite-noname.svg" width="30" height="30"alt="Katherine Pitts icon">APP NAME</a>
+            <a class="navbar-brand" href="#"><img src="/img/katlite-noname.svg" width="30" height="30"alt="Katherine Pitts icon">Taco Cat</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,7 @@
     <!-- ==== Main Section === -->
     <main class="flex-shrink-0">
         <div class="container py-4 px-5 mt-5">
-            <h2 class="border-1 border-bottom border-dark">The Code for APP NAME</h2>
+            <h2 class="border-1 border-bottom border-dark">The Code for Taco Cat</h2>
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col-lg-8">
                     <pre class="line-numbers">
@@ -65,9 +65,17 @@
                     </pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The Code is structured in one function.</p>
-                    <h5>Hello World</h5>
-                    <p>Hello World is a function that displays an alert with a message of "Hello World"</p>
+                    <p>The Code is structured in three functions.</p>
+                    <h5>Get Values</h5>
+                    <p>Get Values stores the string entered by the user. The user string has any capitalization and special characters removed. It then calls the tacoCat and isPalindrome methods.</p>
+                    <p>The screen is cleared, if a previous answer is visible.</p>
+                    <h5>Taco Cat</h5>
+                    <p>Taco Cat initializes an empty array to store the reversed string.</p>The index values of the string array are used as the boundaries for a decrementing for loop. </p>
+                    <p>The loop moves backwards through the string and outputs each value into a new index value on the revString array. The revString array is returned.</p>
+                    
+                    
+                    <h5>Is Palindrome</h5>
+                    <p>Is Palindrome compares the original string to the reversed string. It targets the paragraph with the id "msg". It adds the revString array as inner html.</p><p>The alert box, with id "alert" removes the invisible class and adds the show class to display the reversed string inside the alert, along with a message "The string is a palindrome", or "The string is NOT a palindrome". If the string is a palindrome, the alert message is green, and if not, the alert is red.</p>
                 </div>
             </div>
         </div>

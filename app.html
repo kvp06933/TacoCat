@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
     <head>
-        <title>Mini Site Template</title>
+        <title>Taco Cat: A Coding Project</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
     <!-- ==== Nav Section === -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid"> 
-                <a class="navbar-brand" href="#"><img src="/img/katlite-noname.svg" width="30" height="30"alt="Katherine Pitts icon">APP NAME</a>
+                <a class="navbar-brand" href="#"><img src="/img/katlite-noname.svg" width="30" height="30"alt="Katherine Pitts icon">Taco Cat</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -50,8 +50,27 @@
         </nav>
         <!-- ==== Main Section === -->
         <main class="flex-shrink-0">
-        <div class="container">
-
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col">
+                    <h1>TACO CAT: A Coding Project</h1>
+                    <p class="lead">Taco Cat is a palindrome. A palindrome is a word, phrase or sequence that reads the same backward as forward. Write a program that checks if the phrase entered is a palindrome.</p>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="border-bottom border-2 border-orange">Enter a phrase or word to check</h4>
+                            <input type="text" class="form-control" id="userInput" placeholder="Enter a word or phrase" value=""> 
+                            <button type="button" class="btn btn-dark bg-tacocat-orange mt-2" id="submit">Check It</button>   
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="alert" role="alert" id="isPalindromeDisplay"></div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
         </div>
         </main>
         <!-- ==== Footer Section === -->
@@ -75,6 +94,9 @@
                 </div>    
             </div>
         </footer>
+        <template id="tctemplate">
+            
+        </template>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
             integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -83,6 +105,9 @@
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
         </script>
         <script src="js/site.js"></script>
+        <script>
+            document.getElementById("submit").addEventListener('click', getValue);
+        </script>
     </body>
     
     </html>

@@ -1,6 +1,7 @@
 :root{
     --primary-color: #1d5888;
-    --secondary-color: #ff993b;
+    --secondary-color: #ff914d;
+    --yellow-color: #ffde59;
     --dark-color: #292929;
     --white-color: #dff3e4;
 }
@@ -53,9 +54,15 @@ main>.container {
     color: blue;
 }
 .checklist>li>span>i {
-    color: orange;
+    color: var(--secondary-color);
 }
 
+.border-orange {
+    border-color: var(--secondary-color)!important;
+}
+.background-tacocat-orange{
+    background: var(--secondary-color)!important;
+}
 code[class*="language-"],
         pre[class*="language-"] {            
             white-space: pre-wrap;            
